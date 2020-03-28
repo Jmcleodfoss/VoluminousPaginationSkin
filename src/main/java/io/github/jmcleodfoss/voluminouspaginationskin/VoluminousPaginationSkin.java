@@ -78,7 +78,7 @@ public class VoluminousPaginationSkin extends PaginationSkin
 	private ResourceBundle accessibility;
 
 	/** Create a skin for the given pagination.
-	*	@param	pagination	The Paginiation object to skin
+	*	@param	pagination	The Pagination object to skin
 	*/
 	public VoluminousPaginationSkin(final Pagination pagination)
 	{
