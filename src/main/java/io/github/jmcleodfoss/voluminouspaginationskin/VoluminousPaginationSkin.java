@@ -186,6 +186,7 @@ public class VoluminousPaginationSkin extends PaginationSkin
  	*	@param	graphicCSSClass	The CSS class to use for the graphic
  	*				displayed in the button
  	*	@param	buttonCSSClass	The CSS class used for the button
+	*	@param	accessibilityProperty	The key to look up for the accessible text.
  	*	@param	minButtonSize	The minimum button size used by all
  	*				buttons in the navigation container
  	*	@return	A button with the given styles associated with it.
@@ -211,17 +212,17 @@ public class VoluminousPaginationSkin extends PaginationSkin
 	}
 
 	/** Get the jump fraction value
-	 *	@returns	The jumpFraction
+	 *	@return	The jumpFraction
 	 */
-	double getJumpFraction()
+	public double getJumpFraction()
 	{
 		return jumpFraction.get();
 	}
 
 	/** Get the jump fraction property
-	 *	@returns	The jumpFraction property
+	 *	@return	The jumpFraction property
 	 */
-	DoubleProperty getJumpFractionProperty()
+	public DoubleProperty getJumpFractionProperty()
 	{
 		return jumpFraction;
 	}
@@ -240,7 +241,7 @@ public class VoluminousPaginationSkin extends PaginationSkin
 	/** Set the jump fraction to a new value.
 	 *	@param	newJumpFraction	The new jump fraction value
 	 */
-	void setJumpFraction(double newJumpFraction)
+	public void setJumpFraction(double newJumpFraction)
 	{
 		jumpFraction.set(newJumpFraction);
 	}
