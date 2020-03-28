@@ -3,6 +3,8 @@ package io.github.jmcleodfoss.voluminouspaginationskin;
 import com.sun.javafx.scene.control.skin.PaginationSkin;
 import java.util.Locale;
 import java.util.ResourceBundle;
+import javafx.beans.property.DoubleProperty;
+import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.ListChangeListener;
@@ -43,8 +45,11 @@ public class VoluminousPaginationSkin extends PaginationSkin
 	/** The name of the properties file containing the accessible strings. */
 	private final String RESOURCE_SOURCE = "io.github.jmcleodfoss.voluminouspaginationskin.accessibility";
 
+	/** THe default relative distance by which to jump for jumpBackward and jumpForward */
+	private static final double DEFAULT_JUMP_FRACTION = 0.10;
+
 	/** The relative distance by which to jump for jumpBackward and jumpForward */
-	private static final double JUMP_FRACTION = 0.10;
+	private static DoubleProperty jumpFraction;
 
 	/** The container for all the navigation controls, constructed by the
 	*   PaginationSkin constructor.
@@ -60,10 +65,10 @@ public class VoluminousPaginationSkin extends PaginationSkin
 	/** The button to jump to the first page */
 	private Button firstArrowButton;
 
-	/** The button to jump backward by (Number of pages) * JUMP_FRACTION */
+	/** The button to jump backward by (Number of pages) * jumpFraction */
 	private Button jumpBackwardButton;
 
-	/** The button to jump forward by (Number of pages) * JUMP_FRACTION */
+	/** The button to jump forward by (Number of pages) * jumpFraction */
 	private Button jumpForwardButton;
 
 	/** The button to jump to the last page */
@@ -77,7 +82,17 @@ public class VoluminousPaginationSkin extends PaginationSkin
 	*/
 	public VoluminousPaginationSkin(final Pagination pagination)
 	{
+		this(pagination, DEFAULT_JUMP_FRACTION);
+	}
+
+	/** Create a skin for the given pagination.
+	*	@param	pagination	The Pagination object to skin
+	*	@param	jumpFraction	The relative amount to jump by for jumpForward and jumpBackward
+	*/
+	public VoluminousPaginationSkin(final Pagination pagination, double jumpFraction)
+	{
 		super(pagination);
+		this.jumpFraction = new SimpleDoubleProperty(jumpFraction);
 
 		if (accessibility == null)
 			accessibility = ResourceBundle.getBundle(RESOURCE_SOURCE, Locale.getDefault(), this.getClass().getClassLoader());
@@ -111,7 +126,7 @@ public class VoluminousPaginationSkin extends PaginationSkin
 				pagination.setCurrentPageIndex(target);
 			}
 		});
-		jumpBackwardButton.disableProperty().bind(pagination.currentPageIndexProperty().lessThan(pagination.pageCountProperty().multiply(JUMP_FRACTION)));
+		jumpBackwardButton.disableProperty().bind(pagination.currentPageIndexProperty().lessThan(pagination.pageCountProperty().multiply(this.jumpFraction)));
 
 		jumpForwardButton = createNavigationButton("jump-forward-arrow", "jump-forward-arrow-button", "Accessibility.title.Pagination.JumpBackwardButton", minButtonSize);
 		jumpForwardButton.setOnAction(new EventHandler<ActionEvent>(){
@@ -125,7 +140,7 @@ public class VoluminousPaginationSkin extends PaginationSkin
 				pagination.setCurrentPageIndex(target);
 			}
 		});
-		jumpForwardButton.disableProperty().bind(pagination.currentPageIndexProperty().greaterThan(pagination.pageCountProperty().multiply(1.0 - JUMP_FRACTION)));
+		jumpForwardButton.disableProperty().bind(pagination.currentPageIndexProperty().greaterThan(pagination.pageCountProperty().multiply(1.0 - this.jumpFraction.get())));
 
 		lastArrowButton = createNavigationButton("last-arrow", "last-arrow-button", "Accessibility.title.Pagination.LastButton", minButtonSize);
 		lastArrowButton.setOnAction(new EventHandler<ActionEvent>(){
@@ -195,15 +210,39 @@ public class VoluminousPaginationSkin extends PaginationSkin
 		return button;
 	}
 
+	/** Get the jump fraction value
+	 *	@returns	The jumpFraction
+	 */
+	double getJumpFraction()
+	{
+		return jumpFraction.get();
+	}
+
+	/** Get the jump fraction property
+	 *	@returns	The jumpFraction property
+	 */
+	DoubleProperty getJumpFractionProperty()
+	{
+		return jumpFraction;
+	}
+
 	/** Calculate the distance to jump by based on the number of pages.
 	*	@return	The distance to jump.
-	*	@see JUMP_FRACTION
+	*	@see jumpFraction
 	*/
 	private int jumpDistance()
 	{
 		Pagination pagination = getSkinnable();
 		int maxPage = pagination.getPageCount();
-		return (int)(maxPage * JUMP_FRACTION);
+		return (int)(maxPage * jumpFraction.get());
+	}
+
+	/** Set the jump fraction to a new value.
+	 *	@param	newJumpFraction	The new jump fraction value
+	 */
+	void setJumpFraction(double newJumpFraction)
+	{
+		jumpFraction.set(newJumpFraction);
 	}
 
 	/** Add the new navigation buttons to the navigation container */
