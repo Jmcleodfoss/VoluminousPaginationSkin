@@ -8,7 +8,7 @@ Here is an example that approximates how the VoluminousPaginationSkin compares t
 ### Default PaginationSkin
 :arrow_backward:|121|122|123|124|125|:arrow_forward:
 ### VoluminousPaginationSkin
-:previous_track_button:|:rewind:|:arrow_backward:|121|122|123|124|125|:arrow_forward:|:fast_forward|:next_track_button:
+:previous_track_button:|:rewind:|:arrow_backward:|121|122|123|124|125|:arrow_forward:|:fast_forward:|:next_track_button:
 
 ## Important Note
 If you are contemplating using this, you should consider reworking your design. The JavaFX Pagination control 
