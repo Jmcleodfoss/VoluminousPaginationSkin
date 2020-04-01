@@ -8,6 +8,7 @@
 	<packaging>jar</packaging>
 	<version>1.0.0T</version>
 	<name>${project.groupId}:${project.artifactId}</name>
+	<description>A replacement Pagniation skin for dealing with a large number of pages.</description>
 
 	<licenses>
 		<license>
