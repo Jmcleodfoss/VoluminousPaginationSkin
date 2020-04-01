@@ -12,9 +12,13 @@ Here is an example that approximates how the VoluminousPaginationSkin compares t
 
 ## Important Note
 If you are contemplating using this, you should consider reworking your design. The JavaFX Pagination control 
-is not realy suitable for large quantities of data.
+is not really suitable for large quantities of data, even with this hack to help navigate.
 
 ## Versions
 ### Version 1.0.0
-Version 1.0.0 supports Java 8 with JavaFX bundled in it. It has been tested with version 1.8.0\_242 of the Zulu distribution of
-OpenJDK on Windows, and with a similar version on 32-bit CentOS.
+Version 1.0.0 supports Java 8 with JavaFX bundled in it. It has been tested with version 8.44.0.13 of the Zulu distribution of
+OpenJDK on Windows, and with version 8.42.0.23 on 32-bit CentOS.
+
+### Future
+A future version 2.0.0 will support Java 9 and later with JavaFX as an external library. If this is relatively easy to do (i.e. if the
+default skin still works similarly to the Java 8 one), it should be available by May 2020.
