@@ -22,7 +22,7 @@ import javafx.scene.layout.Region;
 import javafx.scene.text.Font;
 
 /**
- *  A pagination skin with additional controls for use with paginations which
+ *  A pagination skin with additional controls for use with Pagination objects which
  *  must display a large number of pages. It adds the following controls to
  *  the navigation section:
  *  <ul>
@@ -36,7 +36,7 @@ import javafx.scene.text.Font;
  *  javafx.scene.control.skin.PaginationSkin 
  *
  *  This was inspired by @see <a href="https://stackoverflow.com/questions/31540001">Stack Overflow Question 31540001</a>
- *  with code copied from @see <a href="github.com/openjdk/jfx/blob/master/modulres/javafx.controls/src/main/java/javafx/scene/control/skin/PaginationSkin.java">OpenJDK implementation of PaginationSkin</a>
+ *  with code copied from @see <a href="github.com/openjdk/jfx/blob/master/modules/javafx.controls/src/main/java/javafx/scene/control/skin/PaginationSkin.java">OpenJDK implementation of PaginationSkin</a>
  *
  *  CSS (including arrow shape definitions) are in @link{resources/css/VoluminousPaginationSkin.css}
  */
