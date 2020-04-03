@@ -36,14 +36,6 @@
 		<url>https://github.com/Jmcleodfoss/voluminouspagerskin</url>
 	</scm>
 
-	<dependencies>
-		<dependency>
-			<groupId>org.openjfx</groupId>
-			<artifactId>javafx</artifactId>
-			<version>8.44.0</version>
-		</dependency>
-	</dependencies>
-
 	<profiles>
 		<profile>
 			<!-- Use Java 8 and its version of JavaFX -->
