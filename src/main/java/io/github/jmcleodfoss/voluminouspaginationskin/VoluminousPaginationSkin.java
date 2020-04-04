@@ -1,6 +1,5 @@
 package io.github.jmcleodfoss.voluminouspaginationskin;
 
-import com.sun.javafx.scene.control.skin.PaginationSkin;
 import java.util.Locale;
 import java.util.ResourceBundle;
 import javafx.beans.property.DoubleProperty;
@@ -16,6 +15,7 @@ import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Control;
 import javafx.scene.control.Pagination;
+import javafx.scene.control.skin.PaginationSkin;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.Region;
