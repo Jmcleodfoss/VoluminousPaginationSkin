@@ -24,7 +24,7 @@ OpenJDK on Windows, and with version 8.42.0.23 on 32-bit CentOS.
 ### Version 1.0.1
 This version is for Java 8.
 Fix typos in version name and in package description; clean up build dependencies.
-* Javadoc (Link tbd shortly - JM, 2020-04-26)
+* [Javadoc](https://javadoc.io/doc/io.github.jmcleodfoss/voluminouspaginationskin)
 * [Download from Sonatype OSS Maven Repository](https://repo1.maven.org/maven2/io/github/jmcleodfoss/voluminouspaginationskin/1.0.1/)
 
 ### Version 2.0.0
