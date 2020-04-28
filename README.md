@@ -18,16 +18,16 @@ is not really suitable for large quantities of data, even with this hack to help
 ### Version 1.0.0T (the "T" is an accident; the next version on this branch will be 1.0.1 with no "T")
 Version 1.0.0 supports Java 8 with JavaFX bundled in it. It has been tested with version 8.44.0.13 of the Zulu distribution of
 OpenJDK on Windows, and with version 8.42.0.23 on 32-bit CentOS.
-* [Javadoc](https://javadoc.io/doc/io.github.jmcleodfoss/voluminouspaginationskin)
+* [Javadoc](https://javadoc.io/doc/io.github.jmcleodfoss/voluminouspaginationskin/1.0.0T)
 * [Download from Sonatype OSS Maven Repository](https://repo1.maven.org/maven2/io/github/jmcleodfoss/voluminouspaginationskin/1.0.0T/)
 
 ### Version 1.0.1
 This version is for Java 8.
 Fix typos in version name and in package description; clean up build dependencies.
-* [Javadoc](https://javadoc.io/doc/io.github.jmcleodfoss/voluminouspaginationskin)
+* [Javadoc](https://javadoc.io/doc/io.github.jmcleodfoss/voluminouspaginationskin/1.0.1)
 * [Download from Sonatype OSS Maven Repository](https://repo1.maven.org/maven2/io/github/jmcleodfoss/voluminouspaginationskin/1.0.1/)
 
 ### Version 2.0.0
 This version is for JavaFX 9 and higher
-* Javadoc (Link tbd shortly - JM, 2020-04-26)
-* Download from Sonatype OSS Maven Repository (Link tbd shortly - JM, 2020-04-26)
+* [Javadoc](https://javadoc.io/doc/io.github.jmcleodfoss/voluminouspaginationskin/2.0.0)
+* [Download from Sonatype OSS Maven Repository](https://repo1.maven.org/maven2/io/github/jmcleodfoss/voluminouspaginationskin/2.0.0/)
