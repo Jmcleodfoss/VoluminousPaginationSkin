@@ -52,6 +52,7 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 14
+          java-package: jdk+fx
 
       # Compile the code for Java projects and get all libraries, e.g. via Maven
       # Please adapt, if your project uses another build system to compile Java source code.
