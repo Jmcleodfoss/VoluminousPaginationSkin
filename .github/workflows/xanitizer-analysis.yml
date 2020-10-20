@@ -59,7 +59,7 @@ jobs:
       # Please comment out, if your project does not contain Java source code.
       - name: Compile Java code
         run: javac -version
-        run: mvn -B compile
+#        run: mvn -B compile
 
 #      # Install all dependent libraries for JavaScript/TypeScript projects, e.g. via npm
 #      # Please adapt to run `npm install` in the correct directories.
