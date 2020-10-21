@@ -26,30 +26,30 @@
 	-fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
 	-fx-background-insets: 1 0 -1 0, 0;
 	-fx-padding: 0.375em 0.291em 0.375em 0.291em;
-	-fx-shape: "M 0 0 L -13 7 L 0 13 z M -13 0 L -26 7 L -13 13 z M -26 13 L -29 13 L -29 0 L -26 0 z";
 	-fx-scale-shape: true;
+	-fx-shape: "M 0 0 L -13 7 L 0 13 z M -13 0 L -26 7 L -13 13 z M -26 13 L -29 13 L -29 0 L -26 0 z";
 }
 
 .pagination > .pagination-control .jump-backward-arrow {
 	-fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
 	-fx-background-insets: 1 0 -1 0, 0;
 	-fx-padding: 0.375em 0.291em 0.375em 0.291em;
-	-fx-shape: "M 0 0 L -13 7 L 0 13 z M -13 0 L -26 7 L -13 13 z";
 	-fx-scale-shape: true;
+	-fx-shape: "M 0 0 L -13 7 L 0 13 z M -13 0 L -26 7 L -13 13 z";
 }
 
 .pagination > .pagination-control .jump-forward-arrow {
 	-fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
 	-fx-background-insets: 1 0 -1 0, 0;
 	-fx-padding: 0.375em 0.291em 0.375em 0.291em;
-	-fx-shape: "M 0 0 L 13 7 L 0 13 z M 13 0 L 26 7 L 13 13 z";
 	-fx-scale-shape: true;
+	-fx-shape: "M 0 0 L 13 7 L 0 13 z M 13 0 L 26 7 L 13 13 z";
 }
 
 .pagination > .pagination-control .last-arrow {
 	-fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
 	-fx-background-insets: 1 0 -1 0, 0;
 	-fx-padding: 0.375em 0.291em 0.375em 0.291em;
-	-fx-shape: "M 0 0 L 13 7 L 0 13 z M 13 0 L 26 7 L 13 13 z M 26 0 L 26 13 L 29 13 L 29 0 L 26 0 z";
 	-fx-scale-shape: true;
+	-fx-shape: "M 0 0 L 13 7 L 0 13 z M 13 0 L 26 7 L 13 13 z M 26 0 L 26 13 L 29 13 L 29 0 L 26 0 z";
 }
