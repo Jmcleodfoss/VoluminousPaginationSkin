@@ -1,8 +1,8 @@
 ![MIT License](https://img.shields.io/badge/license-MIT-green) 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/8df0d3a8d5ba44feb54f8cab722d04ab)](https://www.codacy.com/gh/Jmcleodfoss/VoluminousPaginationSkin/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Jmcleodfoss/VoluminousPaginationSkin&amp;utm_campaign=Badge_Grade)
-![Xanitizer Security Analysis](https://github.com/Jmcleodfoss/VoluminousPaginationSkin/workflows/Xanitizer%20Security%20Analysis/badge.svg) 
 ![Codacy Security Scan](https://github.com/Jmcleodfoss/VoluminousPaginationSkin/workflows/Codacy%20Security%20Scan/badge.svg) 
 ![CodeQL](https://github.com/Jmcleodfoss/VoluminousPaginationSkin/workflows/CodeQL/badge.svg)
+![Xanitizer Security Analysis](https://github.com/Jmcleodfoss/VoluminousPaginationSkin/workflows/Xanitizer%20Security%20Analysis/badge.svg) 
 
 # VoluminousPaginationSkin Introduction
 A JavaFX skin for the Pagination control for use when there are too many pages to traverse easily using the
