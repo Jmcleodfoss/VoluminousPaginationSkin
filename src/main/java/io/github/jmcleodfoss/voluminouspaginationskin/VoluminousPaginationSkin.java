@@ -46,7 +46,7 @@ public class VoluminousPaginationSkin extends PaginationSkin
 	private static final double DEFAULT_JUMP_FRACTION = 0.10;
 
 	/** The relative distance by which to jump for jumpBackward and jumpForward */
-	private static DoubleProperty jumpFraction;
+	private DoubleProperty jumpFraction;
 
 	/** The container for all the navigation controls, constructed by the
 	*   PaginationSkin constructor.
