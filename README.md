@@ -1,5 +1,6 @@
 ![MIT License](https://img.shields.io/badge/license-MIT-green) 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/8df0d3a8d5ba44feb54f8cab722d04ab)](https://www.codacy.com/gh/Jmcleodfoss/VoluminousPaginationSkin/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Jmcleodfoss/VoluminousPaginationSkin&amp;utm_campaign=Badge_Grade)
+![Java CI with Maven](https://github.com/Jmcleodfoss/VoluminousPaginationSkin/workflows/Java%20CI%20with%20Maven/badge.svg)
 ![Codacy Security Scan](https://github.com/Jmcleodfoss/VoluminousPaginationSkin/workflows/Codacy%20Security%20Scan/badge.svg) 
 ![CodeQL](https://github.com/Jmcleodfoss/VoluminousPaginationSkin/workflows/CodeQL/badge.svg)
 ![Xanitizer Security Analysis](https://github.com/Jmcleodfoss/VoluminousPaginationSkin/workflows/Xanitizer%20Security%20Analysis/badge.svg) 
