@@ -42,3 +42,5 @@ This version is for JavaFX 9 and higher
 ### Version 2.0.1 (JavaFX 9+)
 This version resolves issues found by various static analysis tools (Codacy, Xanitizer). This resulted in some code cleanup and tidying up of README.md.
 The only change to functionality is that the jumpFraction member of the VolumoinousPaginationSkin class is no longer static; it is now present independently within each instance of the class.
+*   [Javadoc](https://javadoc.io/doc/io.github.jmcleodfoss/voluminouspaginationskin/2.0.1)
+*   [Download from Sonatype OSS Maven Repository](https://repo1.maven.org/maven2/io/github/jmcleodfoss/voluminouspaginationskin/2.0.1/)
