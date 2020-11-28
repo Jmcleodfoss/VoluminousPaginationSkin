@@ -38,9 +38,9 @@
 	</repositories>
 
 	<scm>
-		<connection>scm:git:https://github.com/Jmcleodfoss/voluminouspagerskin.git</connection>
-		<developerConnection>scm:git:https://github.com/jmcleodfoss/voluminouspagerskin.git</developerConnection>
-		<url>https://github.com/Jmcleodfoss/voluminouspagerskin</url>
+		<connection>scm:git:https://https://github.com/Jmcleodfoss/VoluminousPaginationSkin.git</connection>
+		<developerConnection>scm:git:https://github.com/jmcleodfoss/voluminousPaginationSkin.git</developerConnection>
+		<url>https://https://github.com/Jmcleodfoss/VoluminousPaginationSkin</url>
 	</scm>
 
 	<dependencies>
