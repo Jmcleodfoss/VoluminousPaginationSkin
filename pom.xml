@@ -194,14 +194,15 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version>
+				<version>3.11.0</version>
 				<configuration>
 					<compilerArgs>
 						<arg>-Xlint:deprecation</arg>
 						<arg>-Xlint:unchecked</arg>
+						<arg>-XDcompilePolicy=simple</arg>
+						<arg>-Xplugin:ErrorProne</arg>
 					</compilerArgs>
-					<source>17</source>
-					<target>17</target>
+					<release>17</release>
 					<annotationProcessorPaths>
 						<path>
 							<groupId>com.google.errorprone</groupId>
