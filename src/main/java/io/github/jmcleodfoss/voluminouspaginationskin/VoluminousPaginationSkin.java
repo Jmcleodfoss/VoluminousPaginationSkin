@@ -35,7 +35,7 @@ import javafx.scene.layout.Region;
  *  This was inspired by @see <a href="https://stackoverflow.com/questions/31540001">Stack Overflow Question 31540001</a>
  *  with code copied from @see <a href="github.com/openjdk/jfx/blob/master/modules/javafx.controls/src/main/java/javafx/scene/control/skin/PaginationSkin.java">OpenJDK implementation of PaginationSkin</a>
  *
- *  CSS (including arrow shape definitions) are in @link{resources/css/VoluminousPaginationSkin.css}
+ *  CSS (including arrow shape definitions) are in {$link resources/css/VoluminousPaginationSkin.css}
  */
 public class VoluminousPaginationSkin extends PaginationSkin
 {
