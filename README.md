@@ -3,7 +3,6 @@
 ![Java CI with Maven](https://github.com/Jmcleodfoss/VoluminousPaginationSkin/workflows/Java%20CI%20with%20Maven/badge.svg)
 ![Codacy Security Scan](https://github.com/Jmcleodfoss/VoluminousPaginationSkin/workflows/Codacy%20Security%20Scan/badge.svg) 
 ![CodeQL](https://github.com/Jmcleodfoss/VoluminousPaginationSkin/workflows/CodeQL/badge.svg)
-![Xanitizer Security Analysis](https://github.com/Jmcleodfoss/VoluminousPaginationSkin/workflows/Xanitizer%20Security%20Analysis/badge.svg) 
 
 # VoluminousPaginationSkin Introduction
 A JavaFX skin for the Pagination control for use when there are too many pages to traverse easily using the
