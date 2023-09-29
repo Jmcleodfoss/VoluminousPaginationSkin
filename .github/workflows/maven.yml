@@ -20,7 +20,7 @@ jobs:
       uses: actions/setup-java@main
       with:
         java-version: 14
-        distribution: oracle
+        distribution: temurin
         java-package: jdk+fx
     - name: Build with Maven
       run: mvn -B package --file pom.xml
