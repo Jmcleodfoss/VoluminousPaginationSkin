@@ -34,10 +34,11 @@ jobs:
 
     # Set up the correct Java version for your project
     # Please comment out, if your project does not contain Java source code.
-    - name: Set up JDK 14
+    - name: Set up JDK 20
       uses: actions/setup-java@main
       with:
-        java-version: 14
+        java-version: 20
+        distribution: zulu
         java-package: jdk+fx
 
     # Initializes the CodeQL tools for scanning.
